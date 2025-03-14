@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单词配对小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>单词配对小游戏</h1>
+        <div class="game-area">
+            <div class="column" id="english-column">
+                <h2>英文</h2>
+                <ul id="english-words"></ul>
+            </div>
+            <div class="column" id="chinese-column">
+                <h2>中文</h2>
+                <ul id="chinese-words"></ul>
+            </div>
+        </div>
+        <div class="controls">
+            <p>时间：<span id="timer">60</span> 秒</p>
+            <button id="start-button">开始游戏</button>
+            <input type="file" id="word-file" accept=".txt, .csv">
+        </div>
+        <div id="message">请上传单词文件</div>
+        <div id="accuracy">正确率：0%</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
